@@ -55,11 +55,12 @@ class Index extends Controller
         return $this->fetch();
     }
     public function vray(){
-		
+
     	$msg='';
     	if (!empty($_POST)) {
     		$p = $_POST;
     		if ($p['name'] == '1-1') {
+				
     			$msg = array('msg'=>'<div style="color:red;">这是第一个</div>');
     		
     		}
